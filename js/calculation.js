@@ -1,9 +1,7 @@
 /*
     script for the calculation.html page
 
-    First, look over the calculation.html page in your editor. Note what elements are there
-    and what their IDs are. You can also open the page in your browser to see what it
-    looks like.
+    First, look over the calculation.html page in your editor. Note what elements are there and what their IDs are. You can also open the page in your browser to see what it looks like.
 
     Your job is to write the code necessary to catch the click event on the "=" button,
     add together the numbers entered into the <input id="value-1"> and <input id="value-2">
@@ -49,3 +47,21 @@
       see http://www.w3schools.com/tags/tag_select.asp. Use the same .value
       property to get the value attribute of the currently-selected <option>
 */
+
+document.addEventListener('DOMContentLoaded', function() {
+  'use strict';
+
+  var num1 = document.getElementById('value-1');
+  var num2 = document.getElementById('value-2');
+  var button = document.getElementById('equals-button');
+  
+  button.addEventListener('click', function() {
+    var added = parseInt(num1.value) + parseInt(num2.value);
+    result.textContent = added;
+
+    if (button.addEventListener('click', function() {
+      
+    }))
+  })
+
+});
